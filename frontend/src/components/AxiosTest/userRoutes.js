@@ -98,6 +98,7 @@ export const signInDoctor = async setUserCallback => {
 // Hardcoded ? -- END
 
 export const signInUser = async signInObj => {
+  //console.log(signInObj)
   return await request.post('users/signin', signInObj); // emaill & password
   // .then(res => {
   //   console.log(res);

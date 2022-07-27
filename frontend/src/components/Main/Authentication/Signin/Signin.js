@@ -49,10 +49,12 @@ const Signin = () => {
       return null;
     } else {
       try {
+        console.log(formState)
         const res = await signInUser({
           email: formState.email,
           password: formState.password,
         });
+        
         localStorage.setItem('cloudclinicJWT', res.data.token);
         const sanitizedUser = omitDeep(res.data.user, [
           '_id',

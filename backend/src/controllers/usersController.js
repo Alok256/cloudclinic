@@ -48,14 +48,15 @@ exports.signIn = async (req, res) => {
   try {
     // Validation before creation
     const { error } = signInValidation(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
+    if (error) return res.status(100).send(error.details[0].message);
 
     // Check if email & password are correct
+    
     const user = await User.findByCredentials(
       req.body.email,
       req.body.password
     );
-
+    console.log("2")
     // Create and assign a token
     const token = await user.generateAuthToken();
 

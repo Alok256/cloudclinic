@@ -468,7 +468,7 @@ const Signup = () => {
     if (!flashMessage) {
       signUpUser(sanitizedForm, setUser, '/profile', errors =>
         setFlashMessage({
-          message: `${errors.message}`,
+          message: `Abe aisa error${errors.message}`,
           type: 'error',
           icon: 'alert',
         })
