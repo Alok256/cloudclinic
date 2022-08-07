@@ -1,6 +1,6 @@
 <img src="./CloudClinic_Logo.svg" width="240"/>
 
-# Team: Duke Nguyen, Hugh Greethead, Harry Buisman
+# Team: Alok Tripathi, Duke Nguyen, Hugh Greethead, Harry Buisman
 
 # An Integrated Virtual Health Consultation Dashboard
 
