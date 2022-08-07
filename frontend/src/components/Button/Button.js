@@ -12,6 +12,7 @@ import {
   LogOut,
   X,
   UploadCloud,
+  Video,
 } from 'react-feather';
 
 const Button = ({ action, color, icon, onClick, dataCypress }) => {
@@ -44,6 +45,8 @@ const Button = ({ action, color, icon, onClick, dataCypress }) => {
         return <LogOut size={iconSize} />;
       case 'uploadCloud':
         return <UploadCloud size={iconSize} />;
+      case 'Video':
+        return <Video size={iconSize} />;
       default:
         return null;
     }

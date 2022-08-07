@@ -24,6 +24,7 @@ import PatientProfile from './components/Main/Patients/PatientProfile/PatientPro
 import ViewDoctor from './components/Home/ViewDoctor/ViewDoctor';
 import LoadingWrapper from './components/LoadingWrapper/LoadingWrapper';
 import FlashMessage from './components/FlashMessage/FlashMessage';
+import Jitsi from './components/Main/Messaging/Feed/Input/Jitsi/jitsi'
 
 function App() {
   const routeVariants = {
@@ -101,10 +102,13 @@ function App() {
                         <PrivateDoctorRoute as={Patients} path="/patients">
                           <PatientList path="/" />
                           <PatientProfile path=":id" />
+                        
                         </PrivateDoctorRoute>
+                        <PrivateRoute as={Jitsi} path="/jitsi"/>
                         <PrivateRoute as={Messaging} path="/messaging" />
                         <PrivateRoute as={Appointments} path="/appointments" />
                         <PrivateRoute as={AccountSettings} path="/settings" />
+                        
                         <Authentication
                           path="/authentication"
                           location={location}

@@ -1,4 +1,10 @@
 import { Jutsu } from 'react-jutsu'
+import React, { useState } from 'react'
+
+import Button from '../../../../../Button/Button'
+import './jitsi.scss'
+
+
 
 const Jitsi = () => {
   const [room, setRoom] = useState('')
@@ -24,11 +30,15 @@ const Jitsi = () => {
       <input id='room' type='text' placeholder='Room' value={room} onChange={(e) => setRoom(e.target.value)} />
       <input id='name' type='text' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
       <input id='password' type='text' placeholder='Password (optional)' value={password} onChange={(e) => setPassword(e.target.value)} />
-      <button onClick={handleClick} type='submit'>
-        Start / Join
-      </button>
+      <Button
+              action="Start/Join Meet"
+              icon="video"
+              color="pink"
+              onClick={handleClick}
+            />
     </form>
   )
 }
 
 export default Jitsi
+

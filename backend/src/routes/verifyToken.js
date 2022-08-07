@@ -1,9 +1,13 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const dotenv = require('dotenv');
+dotenv.config({ path: './config/.env' });
 
 module.exports = async (req, res, next) => {
   try {
     const token = req.header('Authorization');
+   // const token =req.data.token
+   
     if (!token) {
       return res.status(401).send('access denied');
     }

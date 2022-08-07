@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm start --prefix \"./backend\"",
+    "build": "electron-packager . MyApp",
     "backend": "npm run nodemon --prefix \"./backend\"",
     "frontend": "npm start --prefix \"./frontend\"",
     "concurrent": "npm run dev --prefix \"./backend\"",
@@ -30,9 +31,13 @@
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^16.0.1",
+    "electron-packager": "^15.5.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.6",
     "morgan": "^1.10.0",
     "node": "^17.7.2"
+  },
+  "devDependencies": {
+    "electron": "^20.0.1"
   }
 }

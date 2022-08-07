@@ -40,6 +40,7 @@
     "react-feather": "^2.0.8",
     "react-headroom": "^3.0.0",
     "react-jutsu": "^3.0.3",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "^3.4.3",
     "rrule": "^2.6.4",
     "styled-components": "^5.1.1",
@@ -58,16 +59,7 @@
     "electron-package": "./node_modules/.bin/electron-builder -c.extraMetadata.main=build/start-electron.js",
     "preelectron-package": "npm run build"
   },
-  "build": {
-    "appId": "com.loyno-mathcs.Alok256.weatherstation.wotdevice",
-    "files": [
-      "build/**/*",
-      "node_modules/**/*"
-    ],
-    "directories": {
-      "buildResources": "assets"
-    }
-  },
+  
   "eslintConfig": {
     "extends": "react-app"
   },
